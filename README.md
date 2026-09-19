@@ -34,7 +34,7 @@ Measured on an Amlogic Cortex-A35 box, Android 11, `armeabi-v7a`.
 ```
 launcher/    Kutu Home â€” the launcher. Java source + Gradle-free build script.
 toolkit/     setup.sh â€” one-command debloat + install over ADB.
-docs/        The method written out, including the mistakes worth avoiding.
+skills/      The method written out, including the mistakes worth avoiding.
 ```
 
 ---
@@ -161,10 +161,18 @@ If you do not know what a package does, leave it. `dumpsys activity services
 
 ## Method
 
-[`docs/method.md`](docs/method.md) is the full procedure: what to inventory
-before touching anything, what must never be removed and why, the exact order
-for replacing a launcher, and the traps that cost a working box the first time
-round.
+[`skills/android-tv-debloat/SKILL.md`](skills/android-tv-debloat/SKILL.md) is the
+full procedure: what to inventory before touching anything, what must never be
+removed and why, the exact order for replacing a launcher, and the traps that
+cost a working box the first time round.
+
+It is written in the agent-skill format, so it can be read as plain documentation
+or copied into an AI coding agent's skills directory (`~/.claude/skills/`,
+`.agent/skills/` and similar) — the agent then follows this order instead of
+improvising.
+
+It is not an installer. It assumes a human with ADB access who decides which
+apps to keep. For the automated path use `toolkit/setup.sh`.
 
 ---
 

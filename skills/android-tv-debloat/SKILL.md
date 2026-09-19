@@ -1,3 +1,8 @@
+---
+name: android-tv-debloat
+description: Use when debloating, speeding up, or replacing the launcher on an Android TV / Google TV box over ADB.
+---
+
 # Debloating an Android TV box and replacing its launcher
 
 A method validated on a real device. Keep the order — the failures listed here
