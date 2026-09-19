@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overscan_h">48dp</dimen>
+    <dimen name="overscan_v">27dp</dimen>
+    <dimen name="tile_size">72dp</dimen>
+    <dimen name="tile_gap">14dp</dimen>
+    <dimen name="tile_radius">14dp</dimen>
+    <dimen name="shelf_radius">28dp</dimen>
+    <dimen name="shelf_pad">22dp</dimen>
+    <dimen name="chip_h">40dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+# --- ASLA COMMIT ETME / NEVER COMMIT ---
+*.keystore
+*.jks
+*.p12
+*.pem
+key.properties
+local.properties
+
+# derleme ciktilari / build output
+build/
+*.apk
+*.aab
+*.dex
+*.class
+AndroidManifest.xml      # AndroidManifest.xml.in'den uretilir
+
+# kisisel / personal
+geri_al.sh
+rollback.sh
+baseline/
+*.local
+
+# sistem / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

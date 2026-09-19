@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Sakin ust alan: saat / tarih sag ustte -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginEnd="@dimen/overscan_h"
+        android:layout_marginTop="@dimen/overscan_v">
+
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="34sp"
+            android:letterSpacing="0.01"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <!-- Alt merkez: odaklanan uygulama adi + raf + cipler -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_marginBottom="@dimen/overscan_v">
+
+        <TextView
+            android:id="@+id/focusedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:layout_marginBottom="14dp"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-medium" />
+
+        <HorizontalScrollView
+            android:id="@+id/shelfScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="1100dp"
+            android:background="@drawable/shelf_bg"
+            android:paddingStart="@dimen/shelf_pad"
+            android:paddingEnd="@dimen/shelf_pad"
+            android:paddingTop="@dimen/shelf_pad"
+            android:paddingBottom="@dimen/shelf_pad"
+            android:scrollbars="none"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:fillViewport="false">
+
+            <GridLayout
+                android:id="@+id/dock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="5"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:id="@+id/chipMirror"
+                style="@style/Chip"
+                android:text="@string/chip_mirror" />
+
+            <TextView
+                android:id="@+id/chipSettings"
+                style="@style/Chip"
+                android:text="@string/chip_settings" />
+
+            <TextView
+                android:id="@+id/chipApps"
+                style="@style/Chip"
+                android:text="@string/chip_apps" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/overscan_v"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:letterSpacing="0.14"
+        android:alpha="0.75"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:id="@+id/moveHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="58dp"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:text="@string/move_hint" />
+</FrameLayout>

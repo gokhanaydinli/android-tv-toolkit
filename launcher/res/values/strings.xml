@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kutu Home</string>
+    <string name="chip_mirror">Ekran Yansıtma</string>
+    <string name="chip_settings">Ayarlar</string>
+    <string name="chip_apps">Tüm Uygulamalar</string>
+    <string name="all_apps_title">Tüm Uygulamalar</string>
+    <string name="menu_add">Rafa ekle</string>
+    <string name="menu_remove">Raftan çıkar</string>
+    <string name="menu_move">Taşı</string>
+    <string name="menu_info">Uygulama bilgisi</string>
+    <string name="menu_uninstall">Kaldır</string>
+    <string name="move_hint">Taşımak için sağa/sola bas, bitirmek için OK</string>
+    <!-- Ana ekranin ustunde gorunen isim. Bos birakirsan satir hic cizilmez.
+         The name shown at the top of the home screen. Leave empty to hide it. -->
+    <string name="brand_owner"></string>
+</resources>
